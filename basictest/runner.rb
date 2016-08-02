@@ -7,8 +7,8 @@ unless ruby
   ruby = "./#{RbConfig::CONFIG['ruby_install_name']}#{RbConfig::CONFIG['EXEEXT']}"
 end
 unless File.exist? ruby
-  print "#{ruby} is not found.\n"
-  print "Try `make' first, then `make test', please.\n"
+  puts "#{ruby} is not found."
+  puts "Try `make' first, then `make test', please."
   exit false
 end
 ARGV[0] and opt = ARGV[0][/\A--run-opt=(.*)/, 1] and ARGV.shift
