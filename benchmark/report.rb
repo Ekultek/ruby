@@ -73,7 +73,3 @@ if $0 == __FILE__
     measure bench
   }
 end
-
-
-
-
